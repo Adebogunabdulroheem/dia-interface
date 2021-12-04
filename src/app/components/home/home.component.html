@@ -1,0 +1,25 @@
+<div class="home-container">
+    <!-- Header Section -->
+    <header>
+        <!-- <a href="//mail.google.com">Gmail</a> -->
+        <a href="//google.com/images">Images</a>
+        <mat-icon>apps</mat-icon>
+        <button>Sign in</button>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <img src="assets/dia.png" alt="logo">
+        <div class="search-box">
+            <form #form="ngForm" (ngSubmit)="search(form)">
+                <app-search rightIcon="false"></app-search>
+            </form>
+        </div>
+
+        <div class="g-buttons">
+            <button type="button" (click)="search(form)">Search</button>
+            <button>I'm feeling lucky</button>
+        </div>
+    </main>
+
+</div>
